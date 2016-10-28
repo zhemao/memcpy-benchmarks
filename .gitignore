@@ -1,0 +1,3 @@
+bench-dma
+bench-soft
+*.o
