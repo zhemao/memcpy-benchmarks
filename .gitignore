@@ -1,3 +1,4 @@
 bench-dma
 bench-soft
+bench-page
 *.o
