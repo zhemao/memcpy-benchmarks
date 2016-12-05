@@ -49,8 +49,6 @@ int main(int argc, char *argv[])
 	}
 	fill((uint64_t *) src, size / sizeof(uint64_t));
 
-	printf("starting memcpy of %ld bytes from %p to %p\n", size, src, dst);
-
 	asm volatile ("fence");
 
 	start = rdcycle();

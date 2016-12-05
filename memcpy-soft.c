@@ -17,6 +17,9 @@ void test_memcpy(void *dst, void *src, size_t len)
 		while (d < (char *)(dst + len))
 			*(d++) = *(s++);
 	}
+
+	// this is to ensure timing fairness
+	asm volatile ("fence");
 }
 
 
